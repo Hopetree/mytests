@@ -12,6 +12,7 @@ class TEST(object):
         self.piedata = cf.items('piedata')
         self.sexpiedata = cf.items('sexpiedata')
         self.worldcloud = cf.items('worldcloud')
+        self.linedata = cf.items('linedata')
 
     def bartest(self):
         from pyecharts import Bar
@@ -43,11 +44,21 @@ class TEST(object):
 
     def worldcloudtest(self):
         from pyecharts import WordCloud
+        import random
         wd = WordCloud('回帖数词云图')
         key,value = wd.cast(self.worldcloud)
-        wd.add('',key,value,shape='diamond')
+        shapes = ['circle', 'cardioid', 'diamond', 'triangle-forward', 'triangle', 'pentagon', 'star']
+        wd.add('',key,value,shape=shapes[0])
         wd.render('worldcloudtest.html')
         print('词云图测试成功')
+
+    def linetest(self):
+        from pyecharts import Line
+        line = Line('发帖时间分布折线图',self.ftitle)
+        key,value = line.cast(self.linedata)
+        line.add('发帖人数',key,value,is_label_show=True,is_fill=True,area_opacity=0.3,is_smooth=True)
+        line.render('linetest.html')
+        print("折线图测试成功输出")
 
 
 if __name__ == '__main__':
@@ -56,3 +67,4 @@ if __name__ == '__main__':
     test.pietest()
     test.sexpietest()
     test.worldcloudtest()
+    test.linetest()

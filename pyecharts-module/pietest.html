@@ -52,11 +52,20 @@
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('main'));
         var option = {
-    "backgroundColor": "#fff",
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3"
+    ],
     "series": [
         {
-            "type": "pie",
-            "name": "人数",
             "data": [
                 {
                     "name": "底薪3千",
@@ -119,92 +128,83 @@
                     "value": "11724"
                 }
             ],
+            "roseType": null,
             "label": {
                 "normal": {
                     "formatter": "{b} {d}%",
-                    "position": "outside",
                     "show": true,
                     "textStyle": {
                         "color": "#000",
                         "fontSize": 12
-                    }
+                    },
+                    "position": "outside"
                 },
                 "emphasis": {
                     "show": true
                 }
             },
-            "radius": [
-                "30%",
-                "70%"
-            ],
-            "roseType": null,
+            "type": "pie",
+            "name": "人数",
             "center": [
                 "50%",
                 "50%"
+            ],
+            "radius": [
+                "30%",
+                "70%"
             ]
         }
     ],
+    "backgroundColor": "#fff",
+    "tooltip": {},
+    "legend": {
+        "data": [
+            "月薪8千",
+            "月薪3万",
+            "月薪2万",
+            "月薪7千",
+            "月薪4万",
+            "月薪4千",
+            "底薪3千",
+            "月薪6万",
+            "月薪6千",
+            "月薪1万",
+            "月薪5万",
+            "月薪7万",
+            "月薪8万",
+            "月薪9千",
+            "月薪5千"
+        ],
+        "show": false,
+        "left": "center",
+        "orient": "horizontal",
+        "selectedMode": true,
+        "top": "top"
+    },
     "toolbox": {
         "feature": {
             "saveAsImage": {
                 "show": true
             }
         },
-        "top": "center",
         "orient": "vertical",
         "show": true,
+        "top": "center",
         "left": "right"
     },
-    "legend": {
-        "data": [
-            "月薪3万",
-            "月薪4万",
-            "月薪5万",
-            "月薪7千",
-            "月薪6千",
-            "底薪3千",
-            "月薪2万",
-            "月薪6万",
-            "月薪1万",
-            "月薪5千",
-            "月薪8千",
-            "月薪7万",
-            "月薪9千",
-            "月薪4千",
-            "月薪8万"
-        ],
-        "left": "center",
-        "show": false,
-        "orient": "horizontal",
-        "top": "top",
-        "selectedMode": true
-    },
     "title": {
-        "text": "头衔分布饼形图",
         "subtext": "数据来源：“龙华吧”91521条数据",
         "textStyle": {
             "color": "#000",
             "fontSize": 18
         },
-        "left": "left",
         "subtextStyle": {
             "color": "#aaa",
             "fontSize": 12
-        }
-    },
-    "tooltip": {},
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3"
-    ]
+        },
+        "text": "头衔分布饼形图",
+        "left": "left"
+    }
 };
         myChart.setOption(option);
     </script>

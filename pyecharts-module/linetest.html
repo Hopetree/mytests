@@ -48,10 +48,48 @@
 </head>
 
 <body>
-    <div id="main" style="width: 800px;height:500px;"></div>
+    <div id="main" style="width: 800px;height:400px;"></div>
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('main'));
         var option = {
+    "xAxis": {
+        "data": [
+            "0时",
+            "1时",
+            "2时",
+            "3时",
+            "4时",
+            "5时",
+            "6时",
+            "7时",
+            "8时",
+            "9时",
+            "10时",
+            "11时",
+            "12时",
+            "13时",
+            "14时",
+            "15时",
+            "16时",
+            "17时",
+            "18时",
+            "19时",
+            "20时",
+            "21时",
+            "22时",
+            "23时"
+        ],
+        "nameGap": 25,
+        "axisLabel": {
+            "interval": "auto"
+        },
+        "name": "",
+        "nameLocation": "middle",
+        "nameTextStyle": {
+            "fontSize": 14
+        },
+        "type": "category"
+    },
     "color": [
         "#c23531",
         "#2f4554",
@@ -66,54 +104,92 @@
     ],
     "series": [
         {
-            "data": [
-                {
-                    "name": "女",
-                    "value": "21734"
-                },
-                {
-                    "name": "男",
-                    "value": "62529"
-                },
-                {
-                    "name": "未知",
-                    "value": "7258"
+            "stack": "",
+            "markLine": {
+                "data": []
+            },
+            "name": "发帖人数",
+            "areaStyle": {
+                "normal": {
+                    "color": null,
+                    "opacity": 0.3
                 }
+            },
+            "symbol": "emptyCircle",
+            "showSymbol": true,
+            "data": [
+                "3927",
+                "2346",
+                "1245",
+                "1005",
+                "806",
+                "970",
+                "1352",
+                "3012",
+                "3535",
+                "4082",
+                "4634",
+                "4687",
+                "5184",
+                "4429",
+                "4120",
+                "4322",
+                "4303",
+                "5242",
+                "4789",
+                "5069",
+                "5252",
+                "5690",
+                "5930",
+                "5590"
             ],
-            "roseType": "area",
+            "lineStyle": {
+                "normal": {
+                    "curveness": 0,
+                    "opacity": 1,
+                    "width": 1,
+                    "type": "solid"
+                }
+            },
+            "smooth": true,
+            "type": "line",
+            "step": false,
             "label": {
                 "normal": {
-                    "formatter": "{b} {d}%",
+                    "formatter": null,
                     "show": true,
                     "textStyle": {
                         "color": "#000",
                         "fontSize": 12
                     },
-                    "position": "outside"
+                    "position": "top"
                 },
                 "emphasis": {
                     "show": true
                 }
             },
-            "type": "pie",
-            "name": "人数",
-            "center": [
-                "50%",
-                "55%"
-            ],
-            "radius": [
-                "0%",
-                "75%"
-            ]
+            "markPoint": {
+                "data": []
+            }
         }
     ],
     "backgroundColor": "#fff",
     "tooltip": {},
+    "yAxis": {
+        "nameGap": 25,
+        "axisLabel": {
+            "formatter": "{value} "
+        },
+        "name": "",
+        "nameLocation": "middle",
+        "nameTextStyle": {
+            "fontSize": 14
+        },
+        "type": "value"
+    },
     "legend": {
         "data": [
-            "女",
-            "未知",
-            "男"
+            "发帖人数"
         ],
         "show": true,
         "left": "center",
@@ -142,7 +218,7 @@
             "color": "#aaa",
             "fontSize": 12
         },
-        "text": "性别分布饼形图",
+        "text": "发帖时间分布折线图",
         "left": "auto"
     }
 };
