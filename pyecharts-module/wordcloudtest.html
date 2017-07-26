@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src='https://cdn.bootcss.com/echarts/3.2.2/echarts.simple.js'></script>
+    <script type="text/javascript" src="http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js"></script>
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        #main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <div id="main" style="width: 800px;height:400px; ">
+    </div>
+    <script type="text/javascript ">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        },
+        "orient": "vertical",
+        "show": true,
+        "left": "right",
+        "top": "center"
+    },
+    "title": {
+        "textStyle": {
+            "color": "#000",
+            "fontSize": 18
+        },
+        "subtextStyle": {
+            "color": "#aaa",
+            "fontSize": 12
+        },
+        "left": "auto",
+        "text": "回帖数词云图",
+        "subtext": ""
+    },
+    "tooltip": {},
+    "legend": {
+        "data": []
+    },
+    "backgroundColor": "#fff",
+    "series": [
+        {
+            "girdSize": 20,
+            "sizeRange": [
+                12,
+                60
+            ],
+            "type": "wordCloud",
+            "rotationStep": 45,
+            "name": "",
+            "rotationRange": [
+                -90,
+                90
+            ],
+            "data": [
+                {
+                    "name": "小圆球54",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(110,146,152)"
+                        }
+                    },
+                    "value": "1267"
+                },
+                {
+                    "name": "cocoandlucy",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(96,36,90)"
+                        }
+                    },
+                    "value": "737"
+                },
+                {
+                    "name": "love非凡a",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(152,60,128)"
+                        }
+                    },
+                    "value": "660"
+                },
+                {
+                    "name": "心脏发烧丶",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(51,74,38)"
+                        }
+                    },
+                    "value": "620"
+                },
+                {
+                    "name": "水墨依薰",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(127,79,39)"
+                        }
+                    },
+                    "value": "578"
+                },
+                {
+                    "name": "vip王者之颠",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(158,56,142)"
+                        }
+                    },
+                    "value": "574"
+                },
+                {
+                    "name": "苏小美全部啊",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(67,32,10)"
+                        }
+                    },
+                    "value": "568"
+                },
+                {
+                    "name": "不顾一切的爱9",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(35,27,89)"
+                        }
+                    },
+                    "value": "548"
+                },
+                {
+                    "name": "c花落无声520",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(117,4,3)"
+                        }
+                    },
+                    "value": "547"
+                },
+                {
+                    "name": "庐州柳叶刀",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(1,78,35)"
+                        }
+                    },
+                    "value": "530"
+                },
+                {
+                    "name": "囡囡很辛苦",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(110,53,102)"
+                        }
+                    },
+                    "value": "510"
+                },
+                {
+                    "name": "简单快乐的东崽",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(97,151,99)"
+                        }
+                    },
+                    "value": "496"
+                },
+                {
+                    "name": "扣1352239400",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(49,97,39)"
+                        }
+                    },
+                    "value": "452"
+                },
+                {
+                    "name": "闹心的处女座i",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(143,87,67)"
+                        }
+                    },
+                    "value": "391"
+                },
+                {
+                    "name": "新宝马7系",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(20,10,67)"
+                        }
+                    },
+                    "value": "387"
+                },
+                {
+                    "name": "hj5608744",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(136,92,153)"
+                        }
+                    },
+                    "value": "371"
+                },
+                {
+                    "name": "浪吧掌门人",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(61,15,15)"
+                        }
+                    },
+                    "value": "361"
+                },
+                {
+                    "name": "hanqixing",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(151,92,125)"
+                        }
+                    },
+                    "value": "350"
+                },
+                {
+                    "name": "灯灯灯灯灯灯撑",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(25,14,143)"
+                        }
+                    },
+                    "value": "345"
+                },
+                {
+                    "name": "那年梨花开",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(9,17,154)"
+                        }
+                    },
+                    "value": "327"
+                },
+                {
+                    "name": "林退思",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(122,101,99)"
+                        }
+                    },
+                    "value": "314"
+                },
+                {
+                    "name": "啥情况自己去取",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(65,127,75)"
+                        }
+                    },
+                    "value": "311"
+                },
+                {
+                    "name": "绣村刀",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(0,61,57)"
+                        }
+                    },
+                    "value": "306"
+                },
+                {
+                    "name": "灏廭鈥哶鈥哵娑",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(19,44,21)"
+                        }
+                    },
+                    "value": "306"
+                },
+                {
+                    "name": "5顶风射十丈",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(72,104,109)"
+                        }
+                    },
+                    "value": "303"
+                },
+                {
+                    "name": "樂覵",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(10,83,159)"
+                        }
+                    },
+                    "value": "279"
+                },
+                {
+                    "name": "高潮不停啊",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(19,5,127)"
+                        }
+                    },
+                    "value": "278"
+                },
+                {
+                    "name": "叁和大神",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(43,154,40)"
+                        }
+                    },
+                    "value": "262"
+                },
+                {
+                    "name": "南新路口2010",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(139,18,26)"
+                        }
+                    },
+                    "value": "260"
+                },
+                {
+                    "name": "青春染指木村",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(54,89,45)"
+                        }
+                    },
+                    "value": "256"
+                },
+                {
+                    "name": "皇家首席沫熙",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(152,113,39)"
+                        }
+                    },
+                    "value": "253"
+                },
+                {
+                    "name": "远居故人",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(72,90,145)"
+                        }
+                    },
+                    "value": "247"
+                },
+                {
+                    "name": "hb往事如风456",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(8,80,60)"
+                        }
+                    },
+                    "value": "241"
+                },
+                {
+                    "name": "每段路上",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(14,137,135)"
+                        }
+                    },
+                    "value": "235"
+                },
+                {
+                    "name": "额一额额",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(76,104,100)"
+                        }
+                    },
+                    "value": "234"
+                },
+                {
+                    "name": "喝二锅头长大得",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(33,95,121)"
+                        }
+                    },
+                    "value": "233"
+                },
+                {
+                    "name": "我喜欢赢局面",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(11,69,36)"
+                        }
+                    },
+                    "value": "232"
+                },
+                {
+                    "name": "year何杰新",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(80,58,90)"
+                        }
+                    },
+                    "value": "229"
+                },
+                {
+                    "name": "思淳君",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(140,26,120)"
+                        }
+                    },
+                    "value": "228"
+                },
+                {
+                    "name": "lyq人生路",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(94,19,6)"
+                        }
+                    },
+                    "value": "228"
+                },
+                {
+                    "name": "heaven纨绔",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(43,2,152)"
+                        }
+                    },
+                    "value": "227"
+                },
+                {
+                    "name": "追似年华",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(64,113,67)"
+                        }
+                    },
+                    "value": "226"
+                },
+                {
+                    "name": "少年时尚8",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(103,53,140)"
+                        }
+                    },
+                    "value": "226"
+                },
+                {
+                    "name": "蓁",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(93,106,130)"
+                        }
+                    },
+                    "value": "221"
+                },
+                {
+                    "name": "071400579965",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(40,85,129)"
+                        }
+                    },
+                    "value": "216"
+                },
+                {
+                    "name": "12333abc55",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(4,94,24)"
+                        }
+                    },
+                    "value": "211"
+                },
+                {
+                    "name": "qq65265333",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(147,130,42)"
+                        }
+                    },
+                    "value": "210"
+                },
+                {
+                    "name": "我注定胜利",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(63,47,156)"
+                        }
+                    },
+                    "value": "209"
+                },
+                {
+                    "name": "我要忍隐",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(11,120,120)"
+                        }
+                    },
+                    "value": "207"
+                },
+                {
+                    "name": "cqkites",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(159,127,2)"
+                        }
+                    },
+                    "value": "201"
+                },
+                {
+                    "name": "house靖哥哥",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(64,79,56)"
+                        }
+                    },
+                    "value": "201"
+                },
+                {
+                    "name": "简简单单无聊咯",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(39,66,124)"
+                        }
+                    },
+                    "value": "198"
+                },
+                {
+                    "name": "湖北妈妈寻儿子",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(100,151,52)"
+                        }
+                    },
+                    "value": "198"
+                },
+                {
+                    "name": "老夫可耻的匿",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(131,95,160)"
+                        }
+                    },
+                    "value": "196"
+                },
+                {
+                    "name": "暗恋4妹n久了",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(157,158,137)"
+                        }
+                    },
+                    "value": "195"
+                },
+                {
+                    "name": "pcanhui010",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(89,122,152)"
+                        }
+                    },
+                    "value": "192"
+                },
+                {
+                    "name": "ttlove有你真好",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(25,31,139)"
+                        }
+                    },
+                    "value": "192"
+                },
+                {
+                    "name": "168后会无期",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(27,120,81)"
+                        }
+                    },
+                    "value": "189"
+                },
+                {
+                    "name": "各种看不清白",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(78,123,122)"
+                        }
+                    },
+                    "value": "185"
+                },
+                {
+                    "name": "西索卡牌",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(95,43,65)"
+                        }
+                    },
+                    "value": "184"
+                },
+                {
+                    "name": "回不去的夏天a",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(102,127,145)"
+                        }
+                    },
+                    "value": "184"
+                },
+                {
+                    "name": "billy852347",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(123,112,141)"
+                        }
+                    },
+                    "value": "174"
+                },
+                {
+                    "name": "路在何方啊ok",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(5,26,132)"
+                        }
+                    },
+                    "value": "173"
+                },
+                {
+                    "name": "tangguangqi1",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(111,45,125)"
+                        }
+                    },
+                    "value": "172"
+                },
+                {
+                    "name": "q715883908",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(150,86,147)"
+                        }
+                    },
+                    "value": "171"
+                },
+                {
+                    "name": "夜读书88",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(116,14,72)"
+                        }
+                    },
+                    "value": "170"
+                },
+                {
+                    "name": "演绎落花",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(52,75,5)"
+                        }
+                    },
+                    "value": "168"
+                },
+                {
+                    "name": "风遥之光",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(96,69,147)"
+                        }
+                    },
+                    "value": "167"
+                },
+                {
+                    "name": "wql164851912",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(2,32,155)"
+                        }
+                    },
+                    "value": "166"
+                },
+                {
+                    "name": "京城董少",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(47,109,52)"
+                        }
+                    },
+                    "value": "164"
+                },
+                {
+                    "name": "我是澳门新赌王",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(13,147,42)"
+                        }
+                    },
+                    "value": "162"
+                },
+                {
+                    "name": "王冕天佑狗",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(21,154,159)"
+                        }
+                    },
+                    "value": "162"
+                },
+                {
+                    "name": "奶茶东狗东",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(103,5,149)"
+                        }
+                    },
+                    "value": "161"
+                },
+                {
+                    "name": "狄青是大将军",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(38,79,26)"
+                        }
+                    },
+                    "value": "160"
+                },
+                {
+                    "name": "橘子夏天244",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(18,86,135)"
+                        }
+                    },
+                    "value": "157"
+                },
+                {
+                    "name": "mrwu",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(80,44,99)"
+                        }
+                    },
+                    "value": "154"
+                },
+                {
+                    "name": "蛋蛋176",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(80,77,99)"
+                        }
+                    },
+                    "value": "152"
+                },
+                {
+                    "name": "王旭东丶小楼",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(98,54,55)"
+                        }
+                    },
+                    "value": "148"
+                },
+                {
+                    "name": "朱门8年",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(110,139,37)"
+                        }
+                    },
+                    "value": "146"
+                },
+                {
+                    "name": "guxinyi1006",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(22,93,54)"
+                        }
+                    },
+                    "value": "146"
+                },
+                {
+                    "name": "5201314ky",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(89,13,90)"
+                        }
+                    },
+                    "value": "146"
+                },
+                {
+                    "name": "经典十五元床位",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(23,45,103)"
+                        }
+                    },
+                    "value": "145"
+                },
+                {
+                    "name": "dx大军",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(116,153,112)"
+                        }
+                    },
+                    "value": "145"
+                },
+                {
+                    "name": "石龙仔133",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(145,134,122)"
+                        }
+                    },
+                    "value": "142"
+                },
+                {
+                    "name": "a315959194",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(160,32,65)"
+                        }
+                    },
+                    "value": "140"
+                },
+                {
+                    "name": "冷血杀手无情泪",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(160,114,58)"
+                        }
+                    },
+                    "value": "139"
+                },
+                {
+                    "name": "开业大吉福禄寿",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(31,79,110)"
+                        }
+                    },
+                    "value": "137"
+                },
+                {
+                    "name": "罗甸木引乡",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(136,24,152)"
+                        }
+                    },
+                    "value": "137"
+                },
+                {
+                    "name": "欧阳00852",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(56,24,97)"
+                        }
+                    },
+                    "value": "136"
+                },
+                {
+                    "name": "951999979",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(36,98,90)"
+                        }
+                    },
+                    "value": "136"
+                },
+                {
+                    "name": "水瓶生活折磨人",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(71,21,115)"
+                        }
+                    },
+                    "value": "135"
+                },
+                {
+                    "name": "强子要努力",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(13,5,130)"
+                        }
+                    },
+                    "value": "134"
+                },
+                {
+                    "name": "第二炮半价006",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(105,51,35)"
+                        }
+                    },
+                    "value": "134"
+                },
+                {
+                    "name": "围观的闲人",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(137,96,40)"
+                        }
+                    },
+                    "value": "133"
+                },
+                {
+                    "name": "陪她闹逗她笑ii",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(152,129,91)"
+                        }
+                    },
+                    "value": "133"
+                },
+                {
+                    "name": "阿郎嗨",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(0,154,47)"
+                        }
+                    },
+                    "value": "133"
+                },
+                {
+                    "name": "活得死死的",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(95,98,160)"
+                        }
+                    },
+                    "value": "129"
+                },
+                {
+                    "name": "偏激个性名",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(71,26,105)"
+                        }
+                    },
+                    "value": "129"
+                },
+                {
+                    "name": "富有个人",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(28,128,74)"
+                        }
+                    },
+                    "value": "128"
+                },
+                {
+                    "name": "无奈13cm",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(39,51,131)"
+                        }
+                    },
+                    "value": "127"
+                },
+                {
+                    "name": "血色潇湘00",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(23,84,104)"
+                        }
+                    },
+                    "value": "126"
+                },
+                {
+                    "name": "秋田记",
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(48,51,75)"
+                        }
+                    },
+                    "value": "126"
+                }
+            ],
+            "shape": "circle"
+        }
+    ]
+};
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

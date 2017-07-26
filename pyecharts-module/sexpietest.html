@@ -52,6 +52,31 @@
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('main'));
         var option = {
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        },
+        "orient": "vertical",
+        "show": true,
+        "left": "right",
+        "top": "center"
+    },
+    "title": {
+        "textStyle": {
+            "color": "#000",
+            "fontSize": 18
+        },
+        "subtextStyle": {
+            "color": "#aaa",
+            "fontSize": 12
+        },
+        "left": "auto",
+        "text": "性别分布饼形图",
+        "subtext": "数据来源：“龙华吧”91521条数据"
+    },
+    "tooltip": {},
     "color": [
         "#c23531",
         "#2f4554",
@@ -64,6 +89,19 @@
         "#546570",
         "#c4ccd3"
     ],
+    "legend": {
+        "data": [
+            "未知",
+            "女",
+            "男"
+        ],
+        "show": true,
+        "selectedMode": true,
+        "orient": "horizontal",
+        "top": "top",
+        "left": "center"
+    },
+    "backgroundColor": "#fff",
     "series": [
         {
             "data": [
@@ -80,71 +118,33 @@
                     "value": "7258"
                 }
             ],
-            "roseType": "area",
+            "type": "pie",
             "label": {
                 "normal": {
+                    "position": "outside",
                     "formatter": "{b} {d}%",
                     "show": true,
                     "textStyle": {
                         "color": "#000",
                         "fontSize": 12
-                    },
-                    "position": "outside"
+                    }
                 },
                 "emphasis": {
                     "show": true
                 }
             },
-            "type": "pie",
-            "name": "人数",
             "center": [
                 "50%",
                 "55%"
             ],
+            "name": "人数",
             "radius": [
                 "0%",
                 "75%"
-            ]
+            ],
+            "roseType": "area"
         }
-    ],
-    "backgroundColor": "#fff",
-    "tooltip": {},
-    "legend": {
-        "data": [
-            "女",
-            "未知",
-            "男"
-        ],
-        "show": true,
-        "left": "center",
-        "orient": "horizontal",
-        "selectedMode": true,
-        "top": "top"
-    },
-    "toolbox": {
-        "feature": {
-            "saveAsImage": {
-                "show": true
-            }
-        },
-        "orient": "vertical",
-        "show": true,
-        "top": "center",
-        "left": "right"
-    },
-    "title": {
-        "subtext": "数据来源：“龙华吧”91521条数据",
-        "textStyle": {
-            "color": "#000",
-            "fontSize": 18
-        },
-        "subtextStyle": {
-            "color": "#aaa",
-            "fontSize": 12
-        },
-        "text": "性别分布饼形图",
-        "left": "auto"
-    }
+    ]
 };
         myChart.setOption(option);
     </script>

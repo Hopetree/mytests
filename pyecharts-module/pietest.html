@@ -52,6 +52,31 @@
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('main'));
         var option = {
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        },
+        "orient": "vertical",
+        "show": true,
+        "left": "right",
+        "top": "center"
+    },
+    "title": {
+        "textStyle": {
+            "color": "#000",
+            "fontSize": 18
+        },
+        "subtextStyle": {
+            "color": "#aaa",
+            "fontSize": 12
+        },
+        "left": "left",
+        "text": "头衔分布饼形图",
+        "subtext": "数据来源：“龙华吧”91521条数据"
+    },
+    "tooltip": {},
     "color": [
         "#c23531",
         "#2f4554",
@@ -64,6 +89,31 @@
         "#546570",
         "#c4ccd3"
     ],
+    "legend": {
+        "data": [
+            "月薪3万",
+            "月薪5万",
+            "月薪8万",
+            "月薪6千",
+            "月薪1万",
+            "月薪2万",
+            "月薪6万",
+            "月薪4万",
+            "月薪7万",
+            "月薪9千",
+            "月薪4千",
+            "月薪7千",
+            "月薪8千",
+            "月薪5千",
+            "底薪3千"
+        ],
+        "show": false,
+        "selectedMode": true,
+        "orient": "horizontal",
+        "top": "top",
+        "left": "center"
+    },
+    "backgroundColor": "#fff",
     "series": [
         {
             "data": [
@@ -128,83 +178,33 @@
                     "value": "11724"
                 }
             ],
-            "roseType": null,
+            "type": "pie",
             "label": {
                 "normal": {
+                    "position": "outside",
                     "formatter": "{b} {d}%",
                     "show": true,
                     "textStyle": {
                         "color": "#000",
                         "fontSize": 12
-                    },
-                    "position": "outside"
+                    }
                 },
                 "emphasis": {
                     "show": true
                 }
             },
-            "type": "pie",
-            "name": "人数",
             "center": [
                 "50%",
                 "50%"
             ],
+            "name": "人数",
             "radius": [
                 "30%",
                 "70%"
-            ]
+            ],
+            "roseType": null
         }
-    ],
-    "backgroundColor": "#fff",
-    "tooltip": {},
-    "legend": {
-        "data": [
-            "月薪8千",
-            "月薪3万",
-            "月薪2万",
-            "月薪7千",
-            "月薪4万",
-            "月薪4千",
-            "底薪3千",
-            "月薪6万",
-            "月薪6千",
-            "月薪1万",
-            "月薪5万",
-            "月薪7万",
-            "月薪8万",
-            "月薪9千",
-            "月薪5千"
-        ],
-        "show": false,
-        "left": "center",
-        "orient": "horizontal",
-        "selectedMode": true,
-        "top": "top"
-    },
-    "toolbox": {
-        "feature": {
-            "saveAsImage": {
-                "show": true
-            }
-        },
-        "orient": "vertical",
-        "show": true,
-        "top": "center",
-        "left": "right"
-    },
-    "title": {
-        "subtext": "数据来源：“龙华吧”91521条数据",
-        "textStyle": {
-            "color": "#000",
-            "fontSize": 18
-        },
-        "subtextStyle": {
-            "color": "#aaa",
-            "fontSize": 12
-        },
-        "text": "头衔分布饼形图",
-        "left": "left"
-    }
+    ]
 };
         myChart.setOption(option);
     </script>

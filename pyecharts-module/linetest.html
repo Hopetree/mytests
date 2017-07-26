@@ -79,17 +79,54 @@
             "22时",
             "23时"
         ],
-        "nameGap": 25,
+        "type": "category",
+        "nameTextStyle": {
+            "fontSize": 14
+        },
         "axisLabel": {
             "interval": "auto"
         },
         "name": "",
         "nameLocation": "middle",
+        "nameGap": 25
+    },
+    "yAxis": {
+        "type": "value",
         "nameTextStyle": {
             "fontSize": 14
         },
-        "type": "category"
+        "axisLabel": {
+            "formatter": "{value} "
+        },
+        "name": "",
+        "nameLocation": "middle",
+        "nameGap": 25
     },
+    "toolbox": {
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        },
+        "orient": "vertical",
+        "show": true,
+        "left": "right",
+        "top": "center"
+    },
+    "title": {
+        "textStyle": {
+            "color": "#000",
+            "fontSize": 18
+        },
+        "subtextStyle": {
+            "color": "#aaa",
+            "fontSize": 12
+        },
+        "left": "auto",
+        "text": "发帖时间分布折线图",
+        "subtext": "数据来源：“龙华吧”91521条数据"
+    },
+    "tooltip": {},
     "color": [
         "#c23531",
         "#2f4554",
@@ -102,12 +139,37 @@
         "#546570",
         "#c4ccd3"
     ],
+    "legend": {
+        "data": [
+            "发帖人数"
+        ],
+        "show": true,
+        "selectedMode": true,
+        "orient": "horizontal",
+        "top": "top",
+        "left": "center"
+    },
+    "backgroundColor": "#fff",
     "series": [
         {
-            "stack": "",
             "markLine": {
                 "data": []
             },
+            "label": {
+                "normal": {
+                    "position": "top",
+                    "formatter": null,
+                    "show": true,
+                    "textStyle": {
+                        "color": "#000",
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true
+                }
+            },
+            "smooth": true,
             "name": "发帖人数",
             "areaStyle": {
                 "normal": {
@@ -143,84 +205,22 @@
                 "5930",
                 "5590"
             ],
-            "lineStyle": {
-                "normal": {
-                    "curveness": 0,
-                    "opacity": 1,
-                    "width": 1,
-                    "type": "solid"
-                }
-            },
-            "smooth": true,
             "type": "line",
             "step": false,
-            "label": {
-                "normal": {
-                    "formatter": null,
-                    "show": true,
-                    "textStyle": {
-                        "color": "#000",
-                        "fontSize": 12
-                    },
-                    "position": "top"
-                },
-                "emphasis": {
-                    "show": true
-                }
-            },
             "markPoint": {
                 "data": []
-            }
+            },
+            "lineStyle": {
+                "normal": {
+                    "type": "solid",
+                    "opacity": 1,
+                    "curveness": 0,
+                    "width": 1
+                }
+            },
+            "stack": ""
         }
-    ],
-    "backgroundColor": "#fff",
-    "tooltip": {},
-    "yAxis": {
-        "nameGap": 25,
-        "axisLabel": {
-            "formatter": "{value} "
-        },
-        "name": "",
-        "nameLocation": "middle",
-        "nameTextStyle": {
-            "fontSize": 14
-        },
-        "type": "value"
-    },
-    "legend": {
-        "data": [
-            "发帖人数"
-        ],
-        "show": true,
-        "left": "center",
-        "orient": "horizontal",
-        "selectedMode": true,
-        "top": "top"
-    },
-    "toolbox": {
-        "feature": {
-            "saveAsImage": {
-                "show": true
-            }
-        },
-        "orient": "vertical",
-        "show": true,
-        "top": "center",
-        "left": "right"
-    },
-    "title": {
-        "subtext": "数据来源：“龙华吧”91521条数据",
-        "textStyle": {
-            "color": "#000",
-            "fontSize": 18
-        },
-        "subtextStyle": {
-            "color": "#aaa",
-            "fontSize": 12
-        },
-        "text": "发帖时间分布折线图",
-        "left": "auto"
-    }
+    ]
 };
         myChart.setOption(option);
     </script>

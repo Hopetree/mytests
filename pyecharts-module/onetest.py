@@ -11,7 +11,7 @@ class TEST(object):
         self.bardata = cf.items('bardata')
         self.piedata = cf.items('piedata')
         self.sexpiedata = cf.items('sexpiedata')
-        self.worldcloud = cf.items('worldcloud')
+        self.wordcloud = cf.items('wordcloud')
         self.linedata = cf.items('linedata')
 
     def bartest(self):
@@ -42,14 +42,14 @@ class TEST(object):
         pie.render('sexpietest.html')
         print('性别饼形图输出成功')
 
-    def worldcloudtest(self):
+    def wordcloudtest(self):
         from pyecharts import WordCloud
         import random
         wd = WordCloud('回帖数词云图')
-        key,value = wd.cast(self.worldcloud)
+        key,value = wd.cast(self.wordcloud)
         shapes = ['circle', 'cardioid', 'diamond', 'triangle-forward', 'triangle', 'pentagon', 'star']
         wd.add('',key,value,shape=shapes[0])
-        wd.render('worldcloudtest.html')
+        wd.render('wordcloudtest.html')
         print('词云图测试成功')
 
     def linetest(self):
@@ -66,5 +66,5 @@ if __name__ == '__main__':
     test.bartest()
     test.pietest()
     test.sexpietest()
-    test.worldcloudtest()
+    test.wordcloudtest()
     test.linetest()
