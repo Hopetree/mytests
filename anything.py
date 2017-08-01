@@ -1,14 +1,23 @@
 # -*- coding: utf-8 -*-
 
-import multiprocessing as mp
+# 多进程测试
 
-def func(n):
-    for i in range(n):
-        print(i)
+from multiprocessing import Pool
+import os, time, random
 
-if __name__ == '__main__':
-    lis = list(range(10))
-    p = mp.Pool()
-    p.map_async(func,lis)
+
+def long_time_task(sr):
+    print('{} is running,num is {}'.format(os.getpid(),sr))
+    time.sleep(1)
+
+def main():
+    p = Pool()
+    p.map_async(long_time_task, list(range(20)))
     p.close()
     p.join()
+
+
+if __name__=='__main__':
+    t = time.time()
+    main()
+    print('%0.2f'%float(time.time()-t))
